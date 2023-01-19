@@ -10,6 +10,7 @@ const getRoles = (req, res) => {
 };
 
 const createRole = (req, res) => {
+  console.log("createRole", req.body);
   const role = new Role({
     code: req.body.code,
     desc: req.body.desc,
